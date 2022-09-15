@@ -1,0 +1,801 @@
+/* ! BODY */
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+
+/* ! HEADER */
+
+header{
+    display: flex;
+    height: 50px;
+    background-color: #172339;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.tituloHeader{
+    display: flex;
+}
+
+.titulo-header:hover{
+    color: red;
+}
+
+.titulo-header{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ! INICIO */
+
+.bodyIndex{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    display: flex;
+    background-position: -120px;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-inicio{
+    width: 100%;
+    height: auto;
+}
+
+.section-inicio img{
+    width: 100%;
+    height: auto;
+}
+
+.section-inicio p{
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    top: 60%;
+    margin: 5%;
+    position: absolute;
+}
+
+.section-inicio h2{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 5rem;
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../multimedia/estadosunidos.jpg);
+    background-attachment: fixed;
+}
+
+.section-inicio audio{
+    width: 10%;
+    top: 12%;
+    left: 1%;
+    position: absolute;
+}
+
+.texto-main{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hrinicio{
+    width: 75%;
+    margin-top: 10%;
+}
+
+/* 
+.contenedorIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 2fr 0,5fr;
+    grid-template-areas: 
+    "menu menu"
+    "texto texto"
+    "footer footer"
+    ; */
+}
+
+.headerIndex{
+    grid-area: menu;
+}
+
+.mainIndex{
+    grid-area: texto;
+    color: white;
+    font-size: 25px;
+    text-align: start;
+    margin: 20px;
+    padding: 180px;
+}
+
+#subtitulo-inicios{
+    text-align: start;
+}
+
+#subtitulo-trayectoria{
+    text-align: start;
+}
+
+.footerIndex{
+    grid-area: footer;
+}
+
+
+
+/* ! CONTACTO */
+
+.contenedorContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 2fr 0,5fr;
+    grid-template-areas: 
+    "menu menu"
+    "texto contacto"
+    "footer footer"
+    ;
+}
+
+.headerContacto{
+    grid-area: menu;
+}
+
+.mainContacto{
+    grid-area: texto;
+}
+
+.footerContacto{
+    grid-area: footer;
+}
+
+.formContacto{
+    grid-area: contacto;
+    
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    padding: 61px;
+    margin: 80px;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 20px 15px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 50px 100px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #172339;
+    width: 200px;
+    height: 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.tituloContacto{
+    color: white;
+    font-size: 25px;
+    margin: 40px;
+}
+
+
+
+/* ! DISCOGRAFIA */
+
+.tituloDiscografia{
+    font-weight: 5000;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.InframeDiscografia{
+    display: flex;
+    align-items: center;
+}
+
+.Playlist1{
+    margin: 10px;
+    padding: 50px;
+}
+
+.Playlist2{
+    margin: 10px;
+    padding: 50px;
+}
+
+.Playlist3{
+    margin: 10px;
+    padding: 50px;
+}
+
+/* ! - - - - - - INTEGRANTES - - - - - - - */
+
+.tituloIntegrantes{
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.titulo-integrantes{
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.integrantes{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    align-content:stretch;
+    justify-content: center;
+}
+
+
+.integranteStevenTyler{
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.textoStevenTyler{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 11%;
+    font-weight: 600;
+}
+
+.IntegranteJoeyKramer{
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.textoJoeyKramer{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 32.50%;
+    font-weight: 600;
+}
+
+.IntegranteTomHamilton{
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.textoTomHamilton{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 74%;
+    font-weight: 600;
+}
+
+.IntegranteJoePerry{
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.textoJoePerry{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 55.50%;
+    font-weight: 600;
+}
+
+.IntegranteBradWhitford{
+    margin: 20px;
+    height: 300px;
+    width: 250px;
+} 
+
+.textoBradWhitford{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    top: 111%;
+    left: 41.50%;
+    font-weight: 600;
+}
+
+.section-integrantes{
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 4em;
+    font-weight: 500;
+}
+
+
+/* ! - - - - - - GALERIA - - - - - - - */
+
+.TituloGaleria{
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.Galeria{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    align-content:stretch;
+    justify-content: center;
+}
+
+.Foto1{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto2{
+    margin: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.Foto3{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto4{
+    margin: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.Foto5{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto6{
+    margin: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.Foto7{
+    margin: 10px;
+    height: 300px;
+    width: 611px;
+}
+
+.Foto8{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto9{
+    margin: 10px;
+    height: 300px;
+    width: 611px;
+}
+
+.Foto10{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto11{
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.Foto12{
+    margin: 10px;
+    height: 300px;
+    width: 611px;
+}
+
+
+
+/* ! FOOTER */
+
+footer{
+    display: flex;
+    height: 90px;
+    background-color: #172339;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+}
+
+
+
+/* ! MEDIA QUEIRES */
+
+@media (max-width: 768px){
+    .bodyIndex{
+    background-size: 100%;
+    width: auto;
+    margin: auto;
+    }
+
+    .textoPrincipal{
+        font-size: 15px;
+    }
+
+/* ! INTEGRANTES */
+
+    .textoStevenTyler{
+        top: 55%;
+        left: 20%;
+    }
+
+    .textoJoeyKramer{
+        top: 55%;
+        left: 56.50%;
+    }
+
+    .textoTomHamilton{
+        top: 99%;
+        left: 54.50%;
+    }
+
+    .textoJoePerry{
+        top: 99%;
+        left: 22%;
+    }
+
+    .textoBradWhitford{
+        top: 144%;
+        left: 35.50%;
+    }
+
+/* ! CONTACTO */
+
+    button{
+        margin: 70px 0px;
+    }
+
+/* ! INICIO */
+
+    .bodyIndex{
+        background-image: none;
+        background-color: black;
+    }
+
+    .mainIndex{
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .footerIndex{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+}
+
+.section-inicio p{
+    font-size: 1.5rem;
+    top: 25%;
+    margin: 2%;
+}
+
+.section-inicio h2{
+    font-size: 3rem;
+    top: 11%;
+    left: 20%;
+}
+
+
+.section-inicio audio{
+    display: none;
+}
+
+/* ! DISCOGRAFIA */
+
+.InframeDiscografia{
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.Playlist1{
+    margin: 10px;
+    padding: 30px;
+
+}
+
+.Playlist2{
+    margin: 10px;
+    padding: 30px;
+}
+
+.Playlist3{
+    margin: 10px;
+    padding: 30px;
+}
+
+/* ! GALERIA */
+
+.Foto1{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto2{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto3{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto4{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto5{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto6{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto7{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto8{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto9{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto10{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto11{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto12{
+    height: 250px;
+    width: 450px;
+}
+
+
+
+@media (max-width: 500px){
+
+/* ! INTEGRANTES */
+    .textoBradWhitford{
+        top: 231%;
+        left: 27.50%;
+    }
+
+    .textoTomHamilton{
+        top: 187%;
+        left: 28%;
+    }
+
+    .textoJoePerry{
+        top: 143%;
+        left: 36%;
+    }
+
+    .textoJoeyKramer{
+        top: 98%;
+        left: 31%;
+    }
+
+    .textoStevenTyler{
+        top: 53.50%;
+        left: 32.50%;
+    }
+
+/* ! HEADER */
+
+    header{
+        display: flex;
+        height: 50px;
+        background-color: #172339;
+        align-items: center;
+        padding: 5px;
+        color: white;
+        }
+
+    .nav a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding-right: 130px;
+    }
+
+    .header{
+        flex-direction: row;
+    }    
+
+    .tituloHeader{
+        display: none;
+    }
+
+/* ! INICIO */
+
+.section-inicio p{
+    font-size: 1rem;
+    top: 23%;
+    margin: 2%;
+}
+
+.section-inicio h2{
+    font-size: 2rem;
+    top: 10%;
+    left: 20%;
+}
+
+.bodyIndex{
+    background-image: none;
+    background-color: black;
+}
+
+.mainIndex{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
+
+.section-inicio audio{
+    display: none;
+}
+
+/* ! GALERIA */
+
+.Foto1{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto2{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto3{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto4{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto5{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto6{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto7{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto8{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto9{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto10{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto11{
+    height: 250px;
+    width: 450px;
+}
+
+.Foto12{
+    height: 250px;
+    width: 450px;
+}
+
+/* ! CONTACTO */
+
+    .contenedorContacto{
+        display: block;
+    }
+
+    .formContacto{
+        padding: 20px;
+    }
+
+    button{
+        margin: 30px 0px;
+    }
+
+    .tituloContacto{
+        font-size: 20px;
+    }
+    
+
+}
