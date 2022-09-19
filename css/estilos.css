@@ -59,6 +59,10 @@ body{
     position: absolute;
 }
 
+.section-inicio h2:hover{
+    color: #800000;
+}
+
 .section-inicio audio{
     width: 10%;
     top: 12%;
@@ -88,6 +92,11 @@ body{
     font-size: 2.5rem;
     font-weight: 600;
 }
+
+.main-index h2:hover{
+    color: #800000;
+}
+
 
 
 /* ! DISCOGRAFIA */
