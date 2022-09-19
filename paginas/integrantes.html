@@ -7,54 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrantes</title>
 
-    <link rel="shortcut icon" href="../multimedia/Aerosmith-logo.jpg" type="image/x-icon">
-
-    <link rel="stylesheet" href="../css/estilos.css">
-
-    <link rel="icon" href="../multimedia/logo-favicon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+     <link rel="shortcut icon" href="../multimedia/Aerosmith-logo.jpg" type="image/x-icon">
+ 
+     <link rel="stylesheet" href="../css/estilos.css">
+ 
+     <link rel="icon" href="../multimedia/logo-favicon.png">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
     
-    <header>
-        <div class="tituloHeader">
-            <a href="../index.html" class="titulo-header">Aerosmith</a>
-        </div>
+  <nav class="navbar navbar-expand-lg menu-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Aerosmith</a>
 
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="discografia.html">Discografia</a>
-          <a href="integrantes.html">Integrantes</a>
-          <a href="galeria.html">Galeria</a>
-          <a href="contacto.html">Contacto</a>
-      </nav>
-    </header>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <h1 class="tituloIntegrantes">Integrantes</h1>
-    <h5 class="titulo-integrantes">Aerosmith esta conformado por Joe Perry, guitarra solista; Steven Tyler, cantante; Tom Hamilton, bajista; Joey Kramer, batería, y 
-        Brad Whitford, en la segunda guitarra</h5>
-
-    <div class="integrantes">
-        <img src="https://www.infocatolica.com/files/11/05/steventyler.jpg" class="integranteStevenTyler"><p class="textoStevenTyler">Steven Tyler</p>
-        <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS3yNXVK7ywCDL6qOKeFxPjjUzhuFhW4xJi9YHCHfpBQtOfpWGL6Ee0LGw4TunkUP5Q" class="IntegranteJoeyKramer"><p class="textoJoeyKramer">Joey Kramer</p>
-        <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRjYbzRRa431NId17dVCHT1PoKMkqkY13HMNyPXHlvjJwniljuumV3kxC1P91dokbfz" class="IntegranteJoePerry"><p class="textoJoePerry">Joe Perry</p>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR--LEex5EW_gfZr8UqKezycNXN93xcPC2gilfrDUh7Hz0_4CUg" class="IntegranteTomHamilton"><p class="textoTomHamilton">Tom Hamilton</p>
-        <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSZTv0gvV2Y3KTbrpwtgn-JhvkmNOfyd89V93Zryk59da57pqAC0pPdrtGl9mCY3plO" class="IntegranteBradWhitford"><p class="textoBradWhitford">Brad Whitford</p>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./discografia.html">Discografia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./integrantes.html">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <section class="section-integrantes">
-    <p>¿Aero qué? El nombre en sí, no tiene significado; y forma parte de una anécdota de los inicios de la banda. Aerosmith es una palabra que 
-        Joey Kramer tenía escrita en un cuaderno y que hacía referencia a un libro llamado Arrowsmith (Sinclair Lewis, 1925). 
-        Cuando Steven y Joe Perry estaban buscando un nombre para la banda se cruzaron con la anotación de Joey; 
-        quien instantáneamente dijo “No, no.. Arrow no: A-E-R-O”. Todos estuvieron de acuerdo y el nombre perdura hasta hoy.</p>
-    </section>
+      <section class="section-integrantes">
+        <h1>Integrantes</h1>
+      </section>
+
+      <div class="contenedor-integrantes">
+        <img src="../multimedia/steven-tyler.jpg" alt="steven-tyler" class="steven-tyler">
+        <div>
+          <h1>Steven Tyler</h1>
+        <p>Nació el 26 de marzo de 1948 en Yonkers, Nueva York. Como cantante principal de Aerosmith, Tyler es considerado uno de los
+           mejores showmen del rock. Hijo de un profesor de música, comenzó a tocar la batería a una edad temprana, pero luego se centró en el canto.</p>
+        </div>
+      </div>
+      <div class="contenedor-integrantes">
+        <img src="../multimedia/joey-kramer.jpg" alt="joey-kramer">
+        <div>
+          <h1>Joey Kramer</h1>
+        <p>Su primera colaboración autoral con la banda fue para la canción Pandora's Box, del disco Get Your Wings, de 1974. También figura en
+          los créditos de canciones como Kings and Queens y The Hand That Feeds. </p>
+        </div>
+      </div>
+      <div class="contenedor-integrantes">
+        <img src="../multimedia/joe-perry.jpg" alt="joe-perry">
+        <div>
+          <h1>Joe Perry</h1>
+        <p>Joe Perry construyó los cimientos de Aerosmith. Su rol como guitarrista líder y corista le otorgaron una gran popularidad entre 
+          los fans de la  banda. En total, fueron más de 200 millones de álbumes vendidos en 40 años de historia.</p>
+        </div>
+      </div>
+      <div class="contenedor-integrantes">
+        <img src="../multimedia/tom-hamilton.jpg" alt="tom-hamilton">
+        <div>
+          <h1>Tom Hamilton</h1>
+        <p>Comenzó tocando en bares junto a Joe Perry. Para pagar los gastos trabajaba en una heladería, llamada The Anchorage, donde 
+          conoció a Steven Tyler unos años después.</p>
+        </div>
+      </div>
+      <div class="contenedor-integrantes">
+        <img src="../multimedia/brad-whitford.jpg" alt="brad-whitfordr">
+        <div>
+          <h1>Brad Whitford</h1>
+        <p>Se caracteriza por contar con una técnica prolija en la guitarra eléctrica, que ha aportado riffs y solos increíbles durante estos 
+          50 años de carrera musical de la banda. Nació el 23 de febrero de 1952 en Winchester.</p>
+        </div>
+      </div>
 
     <footer>
-        <!-- <h6 class="textoFooter">Pagina web sin fines de lucro.</h6> -->
         <h6>Pagina web sin fines de lucro.<br><br>Copyright Aerosmith©</h6>
         <div>
             <a href="https://www.youtube.com/channel/UCBxdHQVOaZhUOIj_3gt2FYw" target="_blank"><img src="../multimedia/youtube.png" alt="logo.youtube" class="logoyoutube"></a>

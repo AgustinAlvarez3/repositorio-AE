@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discografia</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="../multimedia/Aerosmith-logo.jpg" type="image/x-icon">
 
@@ -19,31 +23,45 @@
 
 <body>
     
-    <header>
-        <div class="tituloHeader">
-            <a href="../index.html" class="titulo-header">Aerosmith</a>
-        </div>
+    <nav class="navbar navbar-expand-lg menu-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Aerosmith</a>
 
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="discografia.html">Discografia</a>
-          <a href="integrantes.html">Integrantes</a>
-          <a href="galeria.html">Galeria</a>
-          <a href="contacto.html">Contacto</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./discografia.html">Discografia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./integrantes.html">Integrantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
 
-    <main>
-        <div class="tituloDiscografia">
-            <h1>DISCOGRAFIA</h1>
-            <h5>¡disfrutá de la mejor música y exitos del pasado!</h5>
-        </div>
-    </main>
+    <div class="div-dis-1">
+        <h1>DISCOGRAFIA</h1>
+        <h5>¡disfrutá de la mejor música y exitos del pasado!</h5>   
+    </div>
 
-    <section class="InframeDiscografia">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1nrDZQLT9EfFArdk9oSCxQ?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="Playlist1"></iframe>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2UhyWgiFb1ZDB1p0Uyljd4?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="Playlist2"></iframe>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6yRJAw8rbqn8dJVw1nxYWb?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="Playlist3"></iframe>
+    <section class="section-dis-2">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1nrDZQLT9EfFArdk9oSCxQ?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist-1"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2UhyWgiFb1ZDB1p0Uyljd4?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist-2"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6yRJAw8rbqn8dJVw1nxYWb?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist-3"></iframe>
     </section>
 
     <footer>
@@ -53,6 +71,11 @@
         </div>
     </footer>
 
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
