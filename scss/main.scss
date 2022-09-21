@@ -1,0 +1,274 @@
+/* BODY */
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+/* HEADER */
+
+.menu-1{
+    background-color: #172339;
+        a{
+            color: white;
+            font-weight: 600;
+        }
+}
+
+
+/* INICIO */
+
+.bodyIndex{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    display: flex;
+    background-position: -120px;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-inicio{
+    width: 100%;
+    height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+            p{
+                color: white;
+                font-size: 1.7rem;
+                text-align: center;
+                top: 60%;
+                margin: 5%;
+                position: absolute;
+            }
+                h2{
+                    font-family: 'Lobster', cursive;
+                    color: #172339;
+                    font-size: 5rem;
+                    top: 40%;
+                    left: 20%;
+                    position: absolute;
+                }
+                    &:hover{
+                        color: #800000;
+                    }
+                        audio{
+                            width: 10%;
+                            top: 12%;
+                            left: 1%;
+                            position: absolute;
+                        }
+}
+
+.texto-main{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.headerIndex{
+    grid-area: menu;
+}
+
+.main-index{
+    grid-area: texto;
+    color: white;
+    font-size: 1.3rem;
+    text-align: start;
+    margin: 20px;
+    padding: 180px;
+        h2{
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+            &:hover{
+                color: #800000;
+            }
+}
+
+
+/* DISCOGRAFIA */
+
+.div-dis-1{
+    color: white;
+    text-align: center;
+    margin: 2.5rem;
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+}
+
+.section-dis-2{
+    display: flex;
+    padding: 3rem;
+}
+
+.playlist-1{
+    margin: 2rem;
+
+}
+
+.playlist-2{
+    margin: 2rem;
+
+}
+
+.playlist-3{
+    margin: 2rem;
+}
+
+
+/* INTEGRANTES */
+
+.contenedor-integrantes{
+    display: flex;
+    margin-top: 50px;
+    background-color: #172339;
+    width: 40%;
+    margin-left: 5.5rem;
+    display: inline-flex;
+    border-radius: 4rem;
+        p{
+            color: white;
+            padding-left: 10px;
+            margin: 10px;
+        }
+            h1{
+                color: white;
+                padding-left: 25px;
+                font-weight: 600;
+                margin-top: 1.5rem;
+            }
+}
+
+.section-integrantes h1{
+    color: white;
+    font-size: 3rem;
+    margin: 2rem;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #172339;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8rem;
+        h6{
+            font-size: 0.7rem;
+            color: white;
+        }
+}
+
+
+/* CONTACTO */
+
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 2fr 0,5fr;
+    grid-template-areas: 
+    "menu menu"
+    "texto contacto"
+    "footer footer"
+    ;
+}
+
+.menu-1{
+    grid-area: menu;
+}
+
+.main-contacto{
+    grid-area: texto;
+        h1{
+            color: white;
+            font-size: 3rem;
+            margin: 2rem;
+            font-weight: 600;
+        }
+            h5{
+                color: white;
+                font-size: 1.5rem;
+                margin: 2rem;
+            }
+}
+
+.footer-contacto{
+    grid-area: footer;
+}
+
+.form-contacto{
+    grid-area: contacto;
+    
+    display: flex;
+    flex-flow: column;
+    width: 35rem;
+    padding: 1rem;
+    margin: 5rem;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 28rem;
+    margin: 1rem;
+    border-radius: 2rem 5rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #172339;
+    width: 9rem;
+    height: 1.5rem;
+    color: white;
+    border-radius: 2rem;
+    margin: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* MEDIA QUEIRES 768PX */
+
+@media (max-width: 768px){
+    
+/* INICIO */
+    
+.main-index{
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 15px;
+    padding: 15px;
+        h2{
+        font-size: 2rem;
+        font-weight: 600;
+        }
+}
+
+
+
+
+
+
+
+
+
+
