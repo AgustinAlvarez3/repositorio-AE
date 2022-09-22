@@ -1,3 +1,65 @@
+/* MEDIA QUEIRES 768PX */
+@media (max-width: 768px) {
+  /* INICIO */
+  .main-index {
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 15px;
+    padding: 15px; }
+    .main-index h2 {
+      font-size: 2rem;
+      font-weight: 600; }
+  .section-inicio p {
+    font-size: 1.5rem;
+    top: 13rem;
+    margin: 1rem; }
+  .section-inicio h2 {
+    font-size: 3rem;
+    top: 8rem;
+    left: 10rem; }
+  .section-inicio audio {
+    display: none; }
+  /* DISCOGRAFIA */
+  .section-dis-2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center; }
+  /* INTEGRANTES */
+  .contenedor-integrantes {
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-left: 14.5rem; }
+  /* GALERIA */
+  .body-galeria {
+    background-color: #172339; }
+  /* CONTACTO */
+  .contenedor-contacto {
+    grid-template-areas: "menu" "texto" "contacto" "footer"; }
+  .form-contacto {
+    width: 38rem; } }
+
+/* MEDIA QUEIRES 500PX */
+@media (max-width: 500px) {
+  /* INICIO */
+  .section-inicio p {
+    font-size: 1rem;
+    top: 11rem;
+    margin: 2%; }
+  .section-inicio h2 {
+    font-size: 2rem;
+    top: 8rem;
+    left: 6.5rem; }
+  /* INTEGRANTES */
+  .contenedor-integrantes {
+    margin-left: 9.5rem; }
+  /* CONTACTO */
+  input, textarea {
+    padding: 0.5rem;
+    width: 15rem; }
+  .form-contacto {
+    width: 25rem; } }
+
 /* BODY */
 body {
   background-color: black;
@@ -41,7 +103,7 @@ body {
     top: 40%;
     left: 20%;
     position: absolute; }
-  .section-inicio:hover {
+  .section-inicio h2:hover {
     color: #800000; }
   .section-inicio audio {
     width: 10%;
@@ -66,7 +128,7 @@ body {
   .main-index h2 {
     font-size: 2.5rem;
     font-weight: 600; }
-  .main-index:hover {
+  .main-index h2:hover {
     color: #800000; }
 
 /* DISCOGRAFIA */
