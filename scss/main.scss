@@ -1,17 +1,32 @@
-@import "mediaqueires";
+/* CONDICIONALES */
 
+$color: normal;
+
+body{
+
+    @if $color == rojo{
+        background-color: red;
+    } @else if $color == blanco{
+        background-color: white;
+    } @else{
+        background-color: black;
+    }
+}
 
 
 /* BODY */
 
 body{
-    background-color: black;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 
 /* HEADER */
+
+.navbar-toggler{
+    border: none;
+}
 
 .menu-1{
     background-color: #172339;
@@ -20,7 +35,6 @@ body{
     font-weight: 600;
     }
 }
-
 
 /* INICIO */
 
@@ -111,20 +125,11 @@ body{
     padding: 3rem;
 }
 
-.playlist-1{
-    margin: 2rem;
-
+@for $i from 1 through 3{
+    .playlist-#{$i}{
+        margin: 2rem;
+    }
 }
-
-.playlist-2{
-    margin: 2rem;
-
-}
-
-.playlist-3{
-    margin: 2rem;
-}
-
 
 /* INTEGRANTES */
 
@@ -147,6 +152,11 @@ body{
     font-weight: 600;
     margin-top: 1.5rem;
     }
+}
+
+.contenedor-integrantes-brad-whitfordr{
+    @extend .contenedor-integrantes;
+    margin-bottom: 3rem;
 }
 
 .section-integrantes h1{
@@ -254,4 +264,136 @@ button{
 
 
 
+/* MEDIA QUEIRES 768PX */
+
+@media (max-width: 768px){
+    
+/* INICIO */
+            
+.main-index{
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 15px;
+    padding: 15px;
+    h2{
+    font-size: 2rem;
+    font-weight: 600;
+    }
+}
+        
+.section-inicio{
+    p{
+    display: none;
+    }
+    h2{
+    display: none;
+    }
+    audio{
+    display: none;
+    }
+}
+        
+/* DISCOGRAFIA */
+            
+.section-dis-2{
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-content: center;
+}
+            
+            
+/* INTEGRANTES */
+            
+.contenedor-integrantes{
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-left: 14.5rem;
+}
+
+.contenedor-integrantes-brad-whitfordr{
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-left: 14.5rem;
+    margin-bottom: 3rem;
+}
+            
+/* GALERIA */
+            
+.body-galeria{
+    background-color: #172339;
+}
+            
+            
+/* CONTACTO */
+            
+.contenedor-contacto{
+    grid-template-areas: 
+    "menu"
+    "texto"
+    "contacto"
+    "footer"
+    ;
+}
+            
+    .form-contacto{
+    width: 38rem;
+}
+}
+        
+        
+        
+/* MEDIA QUEIRES 500PX */
+        
+@media (max-width: 500px){
+        
+/* INICIO */
+            
+.section-inicio{
+    p{
+    display: none;
+    } 
+    h2{
+    display: none;
+    }
+}
+
+.main-index{
+    h2{
+    font-size: 1.5rem;
+    }
+    p{
+    font-size: 1rem;
+    }
+}
+
+            
+/* INTEGRANTES */
+            
+.contenedor-integrantes{
+    margin-left: 7rem;
+    width: 60%;
+}
+
+.contenedor-integrantes-brad-whitfordr{
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
+    width: 60%;
+}
+            
+/* CONTACTO */
+            
+input, textarea{
+    padding: 0.5rem;
+    width: 12rem;
+    margin: rem;
+    border-radius: 2rem 5rem;
+}
+            
+.form-contacto{
+    width: 21.25rem;
+}
+}
 
