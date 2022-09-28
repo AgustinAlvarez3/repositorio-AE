@@ -13,6 +13,10 @@ body{
     }
 }
 
+@mixin sizes($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
 
 /* BODY */
 
@@ -52,8 +56,7 @@ body{
     width: 100%;
     height: auto;
     img{
-    width: 100%;
-    height: auto;
+    @include sizes(100%, auto);
     }
     p{
     color: white;
@@ -70,9 +73,6 @@ body{
     top: 40%;
     left: 20%;
     position: absolute;
-    }
-    h2:hover{
-    color: #800000;
     }
     audio{
     width: 10%;
@@ -125,12 +125,18 @@ body{
     padding: 3rem;
 }
 
-@for $i from 1 through 3{
-    .playlist-#{$i}{
-        margin: 2rem;
+$musica:(
+    1: 15px,
+    2: 15px,
+    3: 15px
+);
+
+@each $key , $value in $musica{
+    .playlist--#{$key}{
+        margin: $value;
     }
 }
-
+    
 /* INTEGRANTES */
 
 .contenedor-integrantes{

@@ -47,8 +47,6 @@ body {
     top: 40%;
     left: 20%;
     position: absolute; }
-  .section-inicio h2:hover {
-    color: #800000; }
   .section-inicio audio {
     width: 10%;
     top: 12%;
@@ -88,14 +86,14 @@ body {
   display: flex;
   padding: 3rem; }
 
-.playlist-1 {
-  margin: 2rem; }
+.playlist--1 {
+  margin: 15px; }
 
-.playlist-2 {
-  margin: 2rem; }
+.playlist--2 {
+  margin: 15px; }
 
-.playlist-3 {
-  margin: 2rem; }
+.playlist--3 {
+  margin: 15px; }
 
 /* INTEGRANTES */
 .contenedor-integrantes, .contenedor-integrantes-brad-whitfordr {
