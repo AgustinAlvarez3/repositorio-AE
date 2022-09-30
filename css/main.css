@@ -1,6 +1,6 @@
 /* CONDICIONALES */
 body {
-  background-color: black; }
+  background-color: #00001a; }
 
 /* BODY */
 body {
@@ -12,7 +12,7 @@ body {
   border: none; }
 
 .menu-1 {
-  background-color: #172339; }
+  background-color: #000037; }
   .menu-1 a {
     color: white;
     font-weight: 600; }
@@ -42,7 +42,7 @@ body {
     position: absolute; }
   .section-inicio h2 {
     font-family: 'Lobster', cursive;
-    color: #172339;
+    color: white;
     font-size: 5rem;
     top: 40%;
     left: 20%;
@@ -99,11 +99,12 @@ body {
 .contenedor-integrantes, .contenedor-integrantes-brad-whitfordr {
   display: flex;
   margin-top: 50px;
-  background-color: #172339;
+  background-color: #000037;
   width: 40%;
   margin-left: 5.5rem;
   display: inline-flex;
-  border-radius: 4rem; }
+  border-radius: 4rem;
+  box-shadow: 10px 2px 10px black; }
   .contenedor-integrantes p, .contenedor-integrantes-brad-whitfordr p {
     color: white;
     padding-left: 10px;
@@ -125,7 +126,7 @@ body {
 
 /* FOOTER */
 footer {
-  background-color: #172339;
+  background-color: #000037;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -183,7 +184,7 @@ input, textarea {
 button {
   border: none;
   outline: none;
-  background-color: #172339;
+  background-color: #000037;
   width: 9rem;
   height: 1.5rem;
   color: white;
